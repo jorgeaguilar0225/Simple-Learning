@@ -1,0 +1,64 @@
+/*---- body section ----*/
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.body1_section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.tutoring_courses_offered_header {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.row_div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.math_course_column_div, 
+.life_sciences_course_column_div, 
+.physical_sciences_course_column_div {
+  flex-basis: 30%;
+  background: #B1D4E0;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+}
+
+.math_course_column_div h2, 
+.life_sciences_course_column_div h2, 
+.physical_sciences_course_column_div h2 {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 900;
+  margin: 10px 0;
+}
+
+.math_course_column_div:hover, 
+.life_sciences_course_column_div:hover, 
+.physical_sciences_course_column_div:hover {
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.math_course_column_div p, 
+.life_sciences_course_column_div p, 
+.physical_sciences_course_column_div p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media(max-width: 900px){
+  .row_div{
+    flex-direction:column;
+  }
+}

@@ -1,0 +1,60 @@
+/*---- body section ----*/
+
+
+.body1_section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.tutoring_courses_cost_header {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.row5_div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.math_course_cost_column_div, 
+.life_sciences_course_cost_column_div, 
+.physical_sciences_course_cost_column_div {
+  flex-basis: 30%;
+  background: #c8dfea;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+}
+
+.mathematics_cost_header_2, 
+.life_sciences_cost_header_2, 
+.physical_sciences_cost_header_2 {
+  text-align: center;
+  font-weight: 800;
+}
+
+.math_course_cost_column_div:hover, 
+.life_sciences_course_cost_column_div:hover, 
+.physical_sciences_course_cost_column_div:hover {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.tutoring_courses_mathematics_text, 
+.tutoring_courses_life_sciences_text, 
+.tutoring_courses_physical_sciences_text {
+  font-size: 18px;
+  font-weight: 450;
+  text-align: left;
+}
+
+@media(max-width: 1200px){
+  .row5_div{
+    flex-direction:column;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="simple_learning6.css">
+    <link rel="stylesheet" href="simple_learning7.css">
+    <link rel="stylesheet" href="simple_learning8.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Playfair+Display&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <section class="header_section">
+      <nav class="navigation_header">
+        <a href="simple_learning.html" target="_blank"><img src="education_icon (1).png"></a>
+        <div class="navigation_links_div" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="about_me.html" target="_blank">ABOUT SIMPLE LEARNING</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="pricing_div">
+        <h1>Pricing</h1>
+      </div>
+    </section>
+
+    <section class="pricing_section">
+      <div class="row4_div">
+        <div class="pricing_column_div">
+          <h1>Pricing</h1>
+          <p>
+            It can definitely feel stressful deciding how much to invest in your educational expenses 
+            especially in this current economical climate. I had friends who would pay between hundreds of 
+            dollars for some basic tutoring services or thousands of dollars for prepping courses tutoring 
+            for exams such as the LSAT or MCAT. As part of this simple learning program, I'm offering 
+            affordable prices that won't hurt your wallet (or your parents) and have the same quality 
+            experience as higher priced companies!
+          </p>
+        </div>
+        <div class="broke_student_column_div">
+          <img src="broke student.jpg"> 
+        </div>
+      </div>
+    </section>
+
+    <section class="body1_section">
+      <h1 class="tutoring_courses_cost_header">Cost of Courses</h1>
+      <p>
+        Depending on the nature of the course, I'll have different rates to ensure some fairness but still 
+        keep it at an affordable price. If you're not able to afford these rates, talk with me and I'll 
+        definitely work with you to meet at a place that's comfortable for you!
+      </p>
+      <div class="row5_div">
+        <div class="math_course_cost_column_div">
+          <h2 class="mathematics_cost_header_2">Mathematics</h2>
+          <p class="tutoring_courses_mathematics_text">
+            Rudimentary Algebra - $25/hr<br>
+            College Algebra - $30/hr<br>
+            Precalculus - $35/hr<br>
+            Calculus I - $40/hr<br>
+            Differential Equations - $40/hr<br>
+          </p>
+        </div>
+        <div class="life_sciences_course_cost_column_div">
+          <h2 class="life_sciences_cost_header_2">Life Sciences</h2>
+          <p class="tutoring_courses_life_sciences_text">
+            Biology (1st semester) - $30/hr<br>
+            Anatomy and Physiology - $35/hr<br>
+            Histology - $40/hr<br>
+            Cell Biology - $40/hr<br>
+          </p>
+        </div>
+        <div class="physical_sciences_course_cost_column_div">
+          <h2 class="physical_sciences_cost_header_2">Physical Sciences</h2>
+          <p class="tutoring_courses_physical_sciences_text">
+            College Physics - $25/hr<br>
+            University Physics - $35/hr<br>
+            Chemistry - $25/hr<br>
+            Organic Chemistry - $35/hr
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-295px";
+      }
+
+    </script>
+
+  </body>
+
+</html>

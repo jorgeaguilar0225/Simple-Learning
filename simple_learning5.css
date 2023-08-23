@@ -1,0 +1,56 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about_me_section {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.row3_div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a_little_about_me_column_div, 
+.something_of_a_scientist_myself_column_div {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.something_of_a_scientist_myself_column_div img {
+  width: 100%;
+}
+
+.a_little_about_me_column_div h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.a_little_about_me_column_div p {
+  font-weight: 500;
+}
+
+@media(max-width: 1200px){
+  .row3_div{
+    flex-direction:column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

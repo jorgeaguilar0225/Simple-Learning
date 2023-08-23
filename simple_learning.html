@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Simple Learning with Jorge</title>
+    <link rel="stylesheet" href="simple_learning1.css">
+    <link rel="stylesheet" href="simple_learning2.css">
+    <link rel="stylesheet" href="simple_learning3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Math&family=Playfair+Display&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+    <section class="header_section">
+      <nav class="navigation_header">
+        <a href="simple_learning.html"><img src="education_icon (1).png"></a>
+        <div class="navigation_links_div" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="about_me.html" target="_blank">ABOUT SIMPLE LEARNING</a></li>
+            <li><a href="pricing.html" target="_blank">PRICING</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text_box_div">
+        <h1>Simple Learning</h1>
+        <p>
+          Welcome to Simple Learning, a tutoring service built for the struggling student
+          seeking a way to not only pass, but EXCEL! Contact me at jorge.a.aguilar0225@gmail.com
+          to schedule your first appointment!
+        </p>
+      </div>
+    </section>
+
+    <section class="body1_section">
+      <h1 class="tutoring_courses_offered_header">Tutoring Courses Offered</h1>
+      <div class="row_div">
+        <div class="math_course_column_div">
+          <h2>Mathematics</h2>
+          <p>
+            Rudimentary Algebra<br>College Algebra<br>Precalculus<br>Calculus I<br>Calculus II<br>Differential Equations
+          </p>
+        </div>
+        <div class="life_sciences_course_column_div">
+          <h2>Life Sciences</h2>
+          <p>
+            Biology<br>Anatomy and Physiology<br>Histology<br>Cell Biology<br>Toxicology
+          </p>
+        </div>
+        <div class="physical_sciences_course_column_div">
+          <h2>Physical Sciences</h2>
+          <p>
+            College Physics<br>University Physics<br>Chemistry<br>Organic Chemistry<br>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="body2_section">
+      <h1 class="check_out_these_pages_header">Resources</h1>
+      <div class="row2_div">
+        <div class="mathematics_picture_column2_div">
+          <img src="mathematics_image (1).png">
+          <div class="layer_mathematics_div">
+            <a href="https://tutorial.math.lamar.edu/" target="_blank" style="cursor: pointer;">
+              <h3>MATHEMATICS</h3>
+            </a>
+          </div>
+        </div>
+        <div class="life_sciences_picture_column2_div">
+          <img src="pathogen_picture (1).png">
+          <div class="layer_life_sciences_div">
+            <a href="https://www.ninjanerd.org/" target="_blank" style="cursor: pointer;">
+              <h3>LIFE SCIENCES</h3>
+            </a>
+          </div>
+        </div>
+        <div class="physical_sciences_picture_column2_div">
+          <img src="wormhole (1).png">
+          <div class="layer_physical_sciences_div">
+            <a href="https://aklectures.com/" target="_blank" style="cursor: pointer;">
+              <h3>PHYSICAL SCIENCES</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-295px";
+      }
+
+    </script>
+
+  </body>
+</html>

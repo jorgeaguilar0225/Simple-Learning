@@ -1,0 +1,40 @@
+
+
+
+.pricing_section {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+}
+
+.row4_div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing_column_div, 
+.broke_student_column_div {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+
+.broke_student_column_div img {
+  width: 100%;
+}
+
+.pricing_column_div h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.pricing_column_div p {
+  font-weight: 500;
+  line-height: 175%;
+}
+
+@media(max-width: 1200px){
+  .row4_div{
+    flex-direction:column;
+  }
+}

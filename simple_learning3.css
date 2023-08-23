@@ -1,0 +1,100 @@
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.body2_section {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.row2_div {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.check_out_these_pages_header {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.mathematics_picture_column2_div,
+.life_sciences_picture_column2_div,
+.physical_sciences_picture_column2_div {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mathematics_picture_column2_div img,
+.life_sciences_picture_column2_div img,
+.physical_sciences_picture_column2_div img {
+  width: 100%;
+  display: block;
+}
+
+.layer_mathematics_div,
+.layer_life_sciences_div,
+.layer_physical_sciences_div {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  transition: 0.5s;
+}
+
+.layer_mathematics_div:hover,
+.layer_life_sciences_div:hover,
+.layer_physical_sciences_div:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.layer_mathematics_div h3, 
+.layer_life_sciences_div h3, 
+.layer_physical_sciences_div h3 {
+  width: 100%; 
+  font-weight: 500;
+  color: #fff; 
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.layer_mathematics_div:hover h3,
+.layer_life_sciences_div:hover h3,
+.layer_physical_sciences_div:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+@media(max-width: 900px){
+  .row2_div{
+    flex-direction:column;
+  }
+
+  .mathematics_picture_column2_div,
+  .life_sciences_picture_column2_div,
+  .physical_sciences_picture_column2_div{
+    width: 70%;
+    margin: 2% auto; 
+  }
+
+  .mathematics_picture_column2_div img,
+  .life_sciences_picture_column2_div img,
+  .physical_sciences_picture_column2_div img {
+    width: 100%;
+  }
+}
+
+
