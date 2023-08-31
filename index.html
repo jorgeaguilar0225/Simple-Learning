@@ -17,14 +17,14 @@
     <section class="header_section">
       <nav class="navigation_header">
         <a href="index.html"><img src="education_icon (1).png"></a>
-        <div class="navigation_links_div" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="hamburger_button">&#9776;</span>
+        <div class="navigation_links_div" id="mySidenav">
           <ul>
-            <li><a href="about_me.html" target="_blank">ABOUT SIMPLE LEARNING</a></li>
+            <p style="font-size: 50px; font-family: 'Poppins'; font-weight: 900;" ><a href="javascript:void(0)" class="closebutton" onclick="closeNav()">&times;</a></p>
+            <li><a href="#">ABOUT SIMPLE LEARNING</a></li>
             <li><a href="pricing.html" target="_blank">PRICING</a></li>
           </ul>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <div class="text_box_div">
@@ -32,7 +32,7 @@
         <p>
           Welcome to Simple Learning, a tutoring service built for the struggling student
           seeking a way to not only pass, but EXCEL! Contact me at jorge.a.aguilar0225@gmail.com
-          or (956) 320-6649 to schedule your first appointment!
+          to schedule your first appointment!
         </p>
       </div>
     </section>
@@ -43,19 +43,19 @@
         <div class="math_course_column_div">
           <h2>Mathematics</h2>
           <p>
-            Rudimentary Algebra<br>College Algebra<br>Precalculus<br>Calculus I<br>Calculus II<br>Differential Equations
+            Rudimentary Algebra<br>College Algebra<br>Precalculus<br>Calculus I<br>Differential Equations
           </p>
         </div>
         <div class="life_sciences_course_column_div">
           <h2>Life Sciences</h2>
           <p>
-            Biology<br>Anatomy and Physiology<br>Histology<br>Cell Biology<br>Toxicology
+            Biology<br>Anatomy and Physiology<br>Histology<br>Cell Biology
           </p>
         </div>
         <div class="physical_sciences_course_column_div">
           <h2>Physical Sciences</h2>
           <p>
-            College Physics<br>University Physics<br>Chemistry<br>Organic Chemistry<br>
+            College Physics<br>University Physics<br>Chemistry<br>Organic Chemistry
           </p>
         </div>
       </div>
@@ -92,16 +92,14 @@
     </section>
 
     <script>
-
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
       }
-      function hideMenu() {
-        navLinks.style.right = "-295px";
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
       }
-
-    </script>
+      </script>
 
   </body>
 </html>
