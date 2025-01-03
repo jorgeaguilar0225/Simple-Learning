@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Sour Gummy', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+
+
+/* Header Section */
+.header_section_p1_div {
+    background-color: rgb(0, 0, 0);
+    height: 15vh; /* Use viewport height to make it responsive */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Push content to the left and right */
+    align-items: center; /* Vertically center the text */
+    padding: 0 2%; /* Add padding on left and right */
+    box-sizing: border-box; /* Include padding in element's total width */
+    overflow: hidden; /* Prevent horizontal overflow */
+}
+
+
+
+
+
+/* Styling for Anchor Links */
+.header_section_p1_div a {
+    color: #ffffff;
+    font-size: 2rem; /* Adjust size for readability */
+    font-family: 'Sour Gummy', sans-serif;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color on hover */
+}
+
+
+
+
+
+.header_section_p1_div a:hover {
+    color: #3E6E7C; /* Change color on hover */
+}
+
+
+
+
+
+/* Left side (Simple Learning with Jorge) */
+.header_section_p1_simple_learning_text_div {
+    flex: 1;
+}
+
+
+
+
+
+/* Right side (Services and About) */
+.header_section_p2_simple_learning_text_div,
+.header_section_p3_simple_learning_text_div {
+    flex: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+
+
+
+.header_section_p2_simple_learning_text_div {
+    margin-right: 30px; /* Increased space to the right of 'Services' */
+}
+
+
+
+
+
+.about_me_container_div {
+    width: 100%; /* or any specific width */
+    height: 75vh; /* or any specific height */
+    overflow: hidden; /* hides any overflow outside the div */
+    position: relative;
+}
+
+
+
+
+
+.about_me_container_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* scales image to fill the div while keeping aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+/* Footer Section */
+.footer_section {
+    position: relative;
+    background: linear-gradient(145deg, #1B2A41, #415A77); /* Deep blue and silver gradient */
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: 'Sour Gummy', sans-serif;
+    overflow: hidden; /* Hide animation overflow */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer_content {
+    position: relative;
+    z-index: 2; /* Keep content above animation */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tagline Styling */
+.footer_tagline {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Contact Information Styling */
+.footer_contact p {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.footer_contact a {
+    color: #FFD700; /* Gold for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_contact a:hover {
+    color: #FFB700; /* Lighter gold on hover */
+    transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Moving Math/Science Symbols Animation */
+.footer_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: url('https://cdn.pixabay.com/photo/2014/04/02/16/25/mathematics-307212_960_720.png'); /* Math/science-themed transparent symbols */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08; /* Very subtle overlay */
+    animation: moveBackground 30s linear infinite; /* Smooth moving animation */
+    z-index: 1; /* Behind footer content */
+}
+
+/* Animation Keyframes */
+@keyframes moveBackground {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Start position */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); /* Complete rotation */
+    }
+}
+
+
+
+
+/* Main Section Styling */
+.main_section_div {
+    text-align: center;
+    padding: 3rem;
+    background-color: #FAFAFA; /* Soft background for readability */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for sophistication */
+    max-width: 800px; /* Restrict width for better readability */
+    margin: 3rem auto; /* Center section on the page */
+}
+
+/* Introductory Text */
+.intro_text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #2A3B47; /* Professional deep gray-blue */
+}
+
+/* Paragraph Styling */
+.about_paragraph {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    line-height: 1.8; /* Improve readability with line spacing */
+    text-align: justify; /* Optional: aligns the text nicely */
+    margin: 1rem 0; /* Add some vertical spacing between paragraphs */
+}
+
+/* Links Inside Paragraphs */
+.about_paragraph a {
+    color: #3E6E7C; /* Subtle blue-gray for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about_paragraph a:hover {
+    color: #FF6F61; /* Warm coral on hover */
+}
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .header_section_p1_div {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Remove fixed height */
+        padding: 1rem 0;
+        align-items: center; /* Center items horizontally */
+    }
+
+    /* Adjust margin for 'Services' and 'About' for proper spacing */
+    .header_section_p2_simple_learning_text_div {
+        margin-right: 0; /* Remove margin-right */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .header_section_p1_div a {
+        font-size: 1.5rem; /* Reduce font size for medium screens (tablets, etc.) */
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .header_section_p1_div a {
+        font-size: 1.2rem; /* Further reduce font size for smaller screens (phones) */
+    }
+}
