@@ -476,11 +476,19 @@ html, body {
         font-size: 1.4rem;
     }
 
+    .subject_section {
+        display: flex;
+        flex-wrap: wrap;  /* Allow boxes to wrap if needed */
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem; /* space between boxes */
+    }
+
     .subject_box {
-        width: 90%; /* Ensure subject boxes are responsive on small screens */
+        width: 48%; /* Ensure subject boxes are responsive on small screens */
         min-height: auto;
         padding: 1rem;
-        margin-bottom: 1rem;
+        box-sizing: border-box;
     }
 
     /* Center the learning plan text and adjust size */
@@ -512,6 +520,7 @@ html, body {
     #contact-form button {
         font-size: 14px;
         padding: 12px;
+        width: 100%;
     }
 
     /* Adjust the image sizes and containers for smaller screens */
@@ -523,10 +532,24 @@ html, body {
         font-size: 1.4rem; /* Smaller font size for intro text on small screens */
         padding: 1rem;
     }
+
+    /* Fix for Randomly Distorted Text in Subject Boxes */
+    .subject_box h2 {
+        font-size: 1.4rem; /* Ensure title text doesn't get too large */
+        margin-bottom: 1rem;
+        text-align: center;
+    }
 }
 
 /* Media Query for Tablets (max width 768px) */
 @media screen and (max-width: 768px) {
+    .subject_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
     /* Adjust subject boxes to fit well on tablets */
     .subject_box {
         width: 45%; /* Responsive for tablets, make it fit */
@@ -539,6 +562,11 @@ html, body {
         width: 90%;
         padding: 1rem;
         margin: 2rem auto;
+    }
+
+    /* Adjust the font size for learning plan text */
+    .learning_plan_title {
+        font-size: 1.8rem;
     }
 
     .learning_service {
@@ -556,6 +584,9 @@ html, body {
         font-size: 1.1rem;
     }
 }
+
+
+
 
 
 
