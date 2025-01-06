@@ -456,8 +456,11 @@ html, body {
   }
 
 @media screen and (max-width: 375px) {
-    a {
-        text-decoration: none; 
+    .subject_box {
+        width: 90%; 
+        min-height: auto; 
+        padding: 1rem; 
+        margin-bottom: 1rem; 
     }
 }
   
