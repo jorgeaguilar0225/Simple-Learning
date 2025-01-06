@@ -303,10 +303,12 @@ html, body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 375px) {
     .subject_box {
-        width: 95%; /* Full width for smaller devices */
-        padding: 0.6rem; /* Reduce padding */
+        width: 90%; 
+        min-height: auto:
+        padding: 1rem; 
+        margin-bottom: 1rem;
     }
 
     .hover_content {
@@ -455,14 +457,7 @@ html, body {
     transform: scale(1.02); /* Slight hover effect */
   }
 
-@media screen and (max-width: 375px) {
-    .subject_box {
-        width: 90%; 
-        min-height: auto; 
-        padding: 1rem; 
-        margin-bottom: 1rem; 
-    }
-}
+
   
   
 
