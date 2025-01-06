@@ -417,7 +417,7 @@ html, body {
 /* Individual Paragraph Styling */
 .learning_service {
     font-size: 1.5rem; /* Adjust the size as needed */
-    line-height: 1.8; /* Improve readability with line spacing */
+    line-height: 3.8; /* Improve readability with line spacing */
     text-align: justify; /* Optional: aligns the text nicely */
     margin: 1rem 0; /* Add some vertical spacing between paragraphs */
 }
