@@ -408,8 +408,6 @@ html, body {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     font-family: 'Sour Gummy', sans-serif;
-    width: 90%;
-    box-sizing: border-box;
 }
 
 
@@ -418,8 +416,8 @@ html, body {
 
 /* Individual Paragraph Styling */
 .learning_service {
-    font-size: 1.2rem; /* Adjust the size as needed */
-    line-height: 1.6; /* Improve readability with line spacing */
+    font-size: 1.5rem; /* Adjust the size as needed */
+    line-height: 1.8; /* Improve readability with line spacing */
     text-align: justify; /* Optional: aligns the text nicely */
     margin: 1rem 0; /* Add some vertical spacing between paragraphs */
 }
@@ -460,6 +458,104 @@ html, body {
   
 
 
+
+
+
+
+
+
+
+
+
+  /* Additional Responsive Styles */
+
+/* Media Query for iPhone 11 (max width 375px) */
+@media screen and (max-width: 375px) {
+    /* Ensure header text is not too large */
+    .header_section_p1_div a {
+        font-size: 1.4rem;
+    }
+
+    .subject_box {
+        width: 90%; /* Ensure subject boxes are responsive on small screens */
+        min-height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Center the learning plan text and adjust size */
+    .learning_services_container {
+        width: 90%;
+        padding: 1rem;
+        margin: 1.5rem auto;
+    }
+
+    .learning_service {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+        line-height: 1.4;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    /* Resize text in footer */
+    .footer_tagline {
+        font-size: 1.3rem;
+    }
+
+    .footer_contact p, .footer_contact a {
+        font-size: 1rem;
+    }
+
+    /* Adjust form inputs and buttons for mobile */
+    #contact-form input, 
+    #contact-form textarea, 
+    #contact-form button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Adjust the image sizes and containers for smaller screens */
+    .educational_services_container_div {
+        height: 60vh;
+    }
+    
+    .intro_text {
+        font-size: 1.4rem; /* Smaller font size for intro text on small screens */
+        padding: 1rem;
+    }
+}
+
+/* Media Query for Tablets (max width 768px) */
+@media screen and (max-width: 768px) {
+    /* Adjust subject boxes to fit well on tablets */
+    .subject_box {
+        width: 45%; /* Responsive for tablets, make it fit */
+        padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Learning services adjustments */
+    .learning_services_container {
+        width: 90%;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    .learning_service {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin: 1rem 0;
+    }
+
+    /* General font size and layout adjustments for footer */
+    .footer_tagline {
+        font-size: 1.5rem;
+    }
+
+    .footer_contact p, .footer_contact a {
+        font-size: 1.1rem;
+    }
+}
 
 
 
