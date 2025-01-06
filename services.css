@@ -280,7 +280,7 @@ html, body {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
-    line-height: 1.5; /* Add line spacing */
+    line-height: 1.8; /* Add line spacing */
     font-size: 1.2rem;
 }
 
@@ -292,30 +292,26 @@ html, body {
 @media (max-width: 768px) {
     .subject_box {
         width: 80%; /* Scale down for tablets */
-        max-width: none; /* Allow dynamic width */
-        min-height: auto; /* Allow height to adjust dynamically */
+        max-width: none; 
+        min-height: auto;
         padding: 0.8rem; /* Adjust internal padding */
     }
 
     .hover_content {
-        padding: 0.6rem; /* Adjust padding for hover content */
-        font-size: 1rem; /* Scale font size */
+        font-size: 0.9rem; /* Scale font size */
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
     .subject_box {
-        width: 90%; 
-        min-height: auto:
-        padding: 1rem; 
-        margin-bottom: 1rem;
+        width: 95%; 
+        padding: 0.6rem; 
     }
 
     .hover_content {
-        font-size: 0.9rem; /* Scale hover content font */
+        font-size: 0.9rem; 
     }
 }
-
 
 
 
@@ -410,6 +406,7 @@ html, body {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     font-family: 'Sour Gummy', sans-serif;
+    box-sizing: border-box; 
 }
 
 
@@ -418,7 +415,7 @@ html, body {
 
 /* Individual Paragraph Styling */
 .learning_service {
-    font-size: 1.5rem; /* Adjust the size as needed */
+    font-size: 1.2rem; /* Adjust the size as needed */
     line-height: 1.6; /* Improve readability with line spacing */
     text-align: justify; /* Optional: aligns the text nicely */
     margin: 1rem 0; /* Add some vertical spacing between paragraphs */
