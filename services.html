@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+
+    <div class="header_section_p1_div">
+        <div class="header_section_p1_simple_learning_text_div">
+            <a href = "mainpage.html" target = "_blank">
+                Simple Learning with Jorge
+            </a>
+        </div>
+        <div class="header_section_p2_simple_learning_text_div">
+            <a href = "services.html">
+                Services
+            </a>
+        </div>
+        <div class="header_section_p3_simple_learning_text_div">
+            <a href = "about.html" target = "_blank">
+                About
+            </a>
+        </div>
+    </div>
+    
+
+
+
+
+    <div class = "educational_services_container_div">
+        <img src = "images/educational services.jpeg">
+    </div>
+
+
+
+
+
+    <div class="main_section_div">
+        <p class="intro_text">
+            As part of the Simple Learning with Jorge Program, I am offering learning mastery in the following content areas:
+            (Hover over each box to uncover the subject material within each category!)
+        </p>
+        <div class="boxes_container">
+            <div class="subject_box" id="maths_box">
+                <h3>Maths</h3>
+                <div class="hover_content">
+                    <ul>
+                        <li>Algebra I - $40/hr or $80/hr</li>
+                        <li>Algebra II - $40/hr or $80/hr</li>
+                        <li>College Algebra - $45/hr or $90/hr</li>
+                        <li>Precalculus - $45/hr or $90/hr</li>
+                        <li>Calculus I - $55/hr or $110/hr</li>
+                        <li>Calculus II - $60/hr or $120/hr</li>
+                        <li>Ordinary Differential Equations - $65/hr or $130/hr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subject_box" id="sciences_box">
+                <h3>Sciences</h3>
+                <div class="hover_content">
+                    <ul>
+                        <li>General/HS Chemistry - $40/hr or $80/hr</li>
+                        <li>General/HS Biology - $40/hr or $80/hr</li>
+                        <li>General/HS Physics - $40/hr or $80/hr</li>
+                        <li>University Physics - $55/hr or $110/hr</li>
+                        <li>Anatomy and Physiology - $55/hr or $110/hr</li>
+                        <li>Organic Chemistry I - $60/hr or $120/hr</li>
+                        <li>Cell Biology - $65/hr or $130/hr</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subject_box" id="others_box">
+                <h3>Other Services</h3>
+                <div class="hover_content">
+                    <ul>
+                        <li>ACT/SAT Math - $50/hr or $100/hr</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class = "learning_services_container">
+            <p class = "learning_service">
+                <u>Individual Learning Service</u>: If you're looking for a personalized, educational experience, then the individual
+                learning service is perfect for you! The prices for the individual learning service are the prices
+                listed on the former half of the subject of interest. This plan works for both in-person and online appointments.
+            </p>
+            <p class = "learning_service">
+                <u>Group Learning Service</u>: If you're looking to collaborate with a group of friends and classmates on a particularly
+                challenging class, then choose the group learning service! The prices for the group learning service are the prices 
+                listed on the latter half of the subject of interest. For the group learning service, up to 4 members per group are 
+                allowed. This plan works for both in-person and online appointments. 
+            </p>
+        </div>
+        <div>
+            <section id="scheduler">
+                <h2>Book a Tutoring Session</h2>
+                <div>
+                  <iframe 
+                    src="https://calendly.com/the-calculus-stories/simple-learning-w-jorge-tutoring-session"
+                    width="100%"
+                    height="600"
+                    frameborder="0"
+                    scrolling="no">
+                  </iframe>
+                </div>
+              </section>
+        </div>
+        <div>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                  <label for="contact-name">Name:</label>
+                  <input type="text" id="contact-name" name="name" required>
+                  
+                  <label for="contact-email">Email:</label>
+                  <input type="email" id="contact-email" name="email" required>
+                  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+              
+                  <button type="submit">Send</button>
+                </form>
+              </section>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer_section">
+        <div class="footer_content">
+            <p class="footer_tagline">Simple Learning will transform your educational experience</p>
+            <div class="footer_contact">
+                <p>Email: <a href="mailto:the.calculus.stories@gmail.com">the.calculus.stories@gmail.com</a></p>
+                <p>Phone: <a href="tel:+19568221412">956-822-1412</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init('63av-5SeoXubeFIpb'); // Replace with your User ID from EmailJS
+    
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        emailjs.sendForm('service_alb4rih', 'template_nxadg3p', this)
+          .then(function() {
+            alert('Message sent successfully!');
+            document.getElementById('contact-form').reset();
+          }, function(error) {
+            alert('Failed to send message. Please try again.');
+            console.log('FAILED...', error);
+          });
+      });
+    </script>  
+        
+</body>
+</html>
+
+

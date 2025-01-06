@@ -1,0 +1,349 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Sour Gummy', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+
+
+/* Header Section */
+.header_section_p1_div {
+    background-color: rgb(0, 0, 0);
+    height: 15vh; /* Use viewport height to make it responsive */
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Push content to the left and right */
+    align-items: center; /* Vertically center the text */
+    padding: 0 2%; /* Add padding on left and right */
+    box-sizing: border-box; /* Include padding in element's total width */
+    overflow: hidden; /* Prevent horizontal overflow */
+}
+
+
+
+
+
+/* Styling for Anchor Links */
+.header_section_p1_div a {
+    color: #ffffff;
+    font-size: 2rem; /* Adjust size for readability */
+    font-family: 'Sour Gummy', sans-serif;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color on hover */
+}
+
+
+
+
+
+.header_section_p1_div a:hover {
+    color: #3E6E7C; /* Change color on hover */
+}
+
+
+
+
+
+/* Left side (Simple Learning with Jorge) */
+.header_section_p1_simple_learning_text_div {
+    flex: 1;
+}
+
+
+
+
+
+/* Right side (Services and About) */
+.header_section_p2_simple_learning_text_div,
+.header_section_p3_simple_learning_text_div {
+    flex: 0;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+
+
+
+.header_section_p2_simple_learning_text_div {
+    margin-right: 30px; /* Increased space to the right of 'Services' */
+}
+
+
+
+
+
+.chalkboard_image_container_div {
+    width: 100%; /* or any specific width */
+    height: 75vh; /* or any specific height */
+    overflow: hidden; /* hides any overflow outside the div */
+    position: relative;
+}
+
+
+
+
+
+.chalkboard_image_container_div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* scales image to fill the div while keeping aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+/* Style for the overlay */
+.chalkboard_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* White text color for contrast */
+    font-size: 1.5rem; /* Adjust as needed */
+    text-align: left;
+    padding: 20px; /* Add some padding for the text */
+    box-sizing: border-box;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+
+
+
+
+.middle_section_div {
+    width: 100%;
+    padding: 2% 0;
+    background: linear-gradient(to right, #f2f2f2, #d9e2ec); /* Gradient background */
+    background-color: #f2f2f2; /* Fallback color */
+    margin-top: 30px; /* Space above the section */
+    border-top: 2px solid #d9e2ec;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Title Styling */
+.middle_section_p1_div h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.middle_section_p1_div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Thumbnails Container */
+.middle_section_youtubevideos_row1_div {
+    width: 90%; /* Centered content */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Slightly increased gap to keep spacing balanced */
+}
+
+
+
+
+
+/* Individual Video Thumbnails */
+.video_link {
+    flex: 1 1 calc(33.3% - 10px); /* Slightly larger width for each thumbnail */
+    max-width: 320px; /* Increased max-width for larger screens */
+    display: flex;
+    justify-content: center;
+}
+
+.video_link img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .header_section_p1_div {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Remove fixed height */
+        padding: 1rem 0;
+        align-items: center; /* Center items horizontally */
+    }
+
+    /* Adjust margin for 'Services' and 'About' for proper spacing */
+    .header_section_p2_simple_learning_text_div {
+        margin-right: 0; /* Remove margin-right */
+    }
+
+    /* Make overlay text and layout responsive */
+    .chalkboard_overlay {
+        width: 60%; /* Increase overlay width to allow more space on smaller screens */
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+        padding: 15px; /* Adjust padding to fit smaller screens */
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .chalkboard_overlay {
+        width: 80%; /* Further increase width for very small screens */
+        font-size: 1.2rem; /* Make text even smaller */
+        padding: 10px; /* Adjust padding further */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .header_section_p1_div a {
+        font-size: 1.5rem; /* Reduce font size for medium screens (tablets, etc.) */
+    }
+}
+
+@media (max-width: 480px) {
+    .header_section_p1_div a {
+        font-size: 1.2rem; /* Further reduce font size for smaller screens (phones) */
+    }
+}
+
+
+
+
+
+/* Responsive Adjustments with Media Queries */
+@media (max-width: 768px) {
+    .middle_section_p1_div h1 {
+        font-size: 1.8rem;
+    }
+
+    .video_link {
+        flex: 1 1 calc(48% - 10px); /* Show two thumbnails per row on medium screens */
+    }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+    .middle_section_p1_div h1 {
+        font-size: 1.5rem;
+    }
+
+    .video_link {
+        flex: 1 1 100%; /* Show one thumbnail per row on small screens */
+    }
+}
+
+
+
+
+
+/* Footer Section */
+.footer_section {
+    position: relative;
+    background: linear-gradient(145deg, #1B2A41, #415A77); /* Deep blue and silver gradient */
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: 'Sour Gummy', sans-serif;
+    overflow: hidden; /* Hide animation overflow */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer_content {
+    position: relative;
+    z-index: 2; /* Keep content above animation */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tagline Styling */
+.footer_tagline {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Contact Information Styling */
+.footer_contact p {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.footer_contact a {
+    color: #FFD700; /* Gold for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer_contact a:hover {
+    color: #FFB700; /* Lighter gold on hover */
+    transform: scale(1.1); /* Subtle zoom effect */
+}
+
+/* Moving Math/Science Symbols Animation */
+.footer_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: url('https://cdn.pixabay.com/photo/2014/04/02/16/25/mathematics-307212_960_720.png'); /* Math/science-themed transparent symbols */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08; /* Very subtle overlay */
+    animation: moveBackground 30s linear infinite; /* Smooth moving animation */
+    z-index: 1; /* Behind footer content */
+}
+
+/* Animation Keyframes */
+@keyframes moveBackground {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg); /* Start position */
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg); /* Complete rotation */
+    }
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
